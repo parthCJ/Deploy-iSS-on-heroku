@@ -6,8 +6,8 @@ import time
 to_address = "parthsharmacj@gmail.cmo"
 from_address = "parth.sharma1104@gmail.com"
 MY_PASSWORD = "bfgcaslnmfewobch"
-MY_LAT = "25.4891177" # Your latitude
-MY_LONG = "74.3300726" # Your longitude
+MY_LAT = 25.4891177 # Your latitude
+MY_LONG = 74.3300726 # Your longitude
 
 def is_iss_overhead():
     response = requests.get(url="http://api.open-notify.org/iss-now.json")
@@ -18,7 +18,7 @@ def is_iss_overhead():
     iss_longitude = float(data["iss_position"]["longitude"])
 
     #Your position is within +5 or -5 degrees of the iss position.
-    if MY_LAT-5 <= iss_latitude <= MY_LAT+5 and MY_LONG-5 <= iss_longitude <= MY_LONG+5:
+    if (MY_LAT-5) <= iss_latitude <= (MY_LAT+5) and (MY_LONG-5) <= iss_longitude <= (MY_LONG+5):
         return True
 
 
