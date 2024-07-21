@@ -3,11 +3,11 @@ from datetime import datetime
 import smtplib
 import time
 
-to_address = "parthsharmacj@gmail.cmo"
-from_address = "parth.sharma1104@gmail.com"
-MY_PASSWORD = "bfgcaslnmfewobch"
-MY_LAT = 25.4891177 # Your latitude
-MY_LONG = 74.3300726 # Your longitude
+to_address = "your address"
+from_address = "your adress"
+MY_PASSWORD = "fghffcvfgfccv"
+MY_LAT = 4891177 # Your latitude
+MY_LONG = 3300726 # Your longitude
 
 def is_iss_overhead():
     response = requests.get(url="http://api.open-notify.org/iss-now.json")
